@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/weather-2021-12-07.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Simple Weather App</h1>
+      <form class="input-section">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Search for a city"
+          class="user-input"
+        />
+        <button id="search-btn" class="search-btn">
+          <img src="images/search-solid.svg" alt="search-button" />
+        </button>
+      </form>
+      <div class="cards-container" id="cards-container">
+        <template id="user-template" class="user-template">
+          <div class="card" id="card">
+            <span class="city-name" id="city-name">ktm</span>
+            <div class="temp-container">
+              <span class="temp" id="temp"></span>
+              <span class="celcius">°C</span>
+            </div>
+
+            <img
+              src=""
+              alt=""
+              srcset=""
+              id="condition-icon"
+              class="condition-icon"
+            />
+            <span class="condition" id="condition"></span>
+          </div>
+        </template>
+      </div>
+      <!-- <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="image"> -->
+    </div>
+  </body>
+</html>
