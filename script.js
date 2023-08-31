@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     defaultCond.innerText = data.current.condition.text;
   }
   async function mainWeather() {
-    const url = `http://api.weatherapi.com/v1/current.json?key=bbbb56a33f20445a934111049233008&q=Nepal&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=bbbb56a33f20445a934111049233008&q=Nepal&aqi=no`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   async function weather() {
     const userInput = document.getElementById("user-input").value;
     console.log(userInput);
-    const url = `http://api.weatherapi.com/v1/current.json?key=bbbb56a33f20445a934111049233008&q=${userInput}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=bbbb56a33f20445a934111049233008&q=${userInput}&aqi=no`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
