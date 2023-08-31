@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         const cardclone = userTemplate.content.cloneNode(true).children[0];
         domWork(cardclone, data);
         cardsContainer.appendChild(cardclone);
@@ -34,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         if (data.error && data.error.message) {
           alert(data.error.message);
-        } else {
-          console.log(data);
         }
         const cardclone = userTemplate.content.cloneNode(true).children[0];
         domWork(cardclone, data);
